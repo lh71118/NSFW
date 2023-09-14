@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website</title>
+    <link rel="Website Icon" href="browser.png">
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
 </head>
+
 <body>
-    <video  width="200" height="400" controls>
-        <source src="niqque.mp4" type="video/mp4">
-    </video>
     <input id="input" type="text" placeholder="say my name">
     <button id="btn">enter</button>
     <button id="myBtn"><a href="video.html">verified</a></button>
 
-    </video>
+    <div class="videos">
+        <abbr title="niqque"><video width="200" height="400" controls>
+                <source src="niqque.mp4" type="video/mp4">
+            </video>
+        </abbr>
+        <abbr title="laakhau-haajarau"><video width="200" height="400" controls>
+                <source src="laakhau_hajaarau.mp4" type="video/mp4">
+            </video>
+        </abbr>
+        <abbr title="i-can't-stop-loving-you"><video width="200" height="400" controls>
+                <source src="i_can't_stop_loving_you.mp4" type="video/mp4">
+            </video>
+        </abbr>
+        <abbr title="hitler"><video width="200" height="400" controls>
+            <source src="hitler.mp4" type="video/mp4">
+        </video>
+    </abbr>
+    </div>
+
 </body>
 <script>
-    let input  = document.getElementById("input");
+    let input = document.getElementById("input");
     let myBtn = document.getElementById("myBtn").style.display = "none";
-    
-    let btn = document.getElementById("btn").addEventListener("click",function(){
-        
-        if(input.value == "you're heisenberg"){
-        let myBtn = document.getElementById("myBtn").style.display = "block";
+
+    let btn = document.getElementById("btn").addEventListener("click", function () {
+
+        if (input.value == "you're heisenberg") {
+            let myBtn = document.getElementById("myBtn").style.display = "block";
 
             console.log("you're god damn right!");
         }
     });
-    
+
 </script>
+
 </html>
