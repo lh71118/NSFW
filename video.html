@@ -1,21 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>videos</title>
 </head>
+
 <body>
     <h1>you're god dammn right</h1>
     now , here is the sauce
     <div class="video">
-        <video  width="200" height="200" controls>
+        <video width="200" height="200" controls>
             <source src="huh.mp4" type="video/mp4">
         </video>
-        <video  width="200" height="200" controls>
+        <video width="200" height="200" controls>
             <source src="huh2.mp4" type="video/mp4">
         </video>
     </div>
+    <button id="btn">
+        <h1>click here</h1>
+    </button>
+    <div class="nope">
+        <a href="z1.jpg" target="_blank"><img src="z1.jpg" alt="" class="pics"></a>
+        <a href="z2.jpg" target="_blank"><img src="z2.jpg" alt="" class="pics"></a>
+        <a href="z3.jpg" target="_blank"><img src="z3.jpg" alt="" class="pics"></a>
+        <a href="z4.jpg" target="_blank"><img src="z4.jpg" alt="" class="pics"></a>
+        <a href="z5.jpg" target="_blank"><img src="z5.jpg" alt="" class="pics"></a>
+        <a href="z6.jpg" target="_blank"><img src="z6.jpg" alt="" class="pics"></a>
+        <a href="z7.jpg" target="_blank"><img src="z7.jpg" alt="" class="pics"></a>
+        <a href="z8.jpg" target="_blank"><img src="z8.jpg" alt="" class="pics"></a>
+        <a href="z9.jpg" target="_blank"><img src="z9.jpg" alt="" class="pics"></a>
+        <a href="z10.jpg" target="_blank"><img src="z10.jpg" alt="" class="pics"></a>
+        <a href="z11.jpg" target="_blank"><img src="z11.jpg" alt="" class="pics"></a>
+        <a href="z12.jpg" target="_blank"><img src="z12.jpg" alt="" class="pics"></a>
+        <a href="z13.jpg" target="_blank"><img src="z13.jpg" alt="" class="pics"></a>
+        <a href="z14.jpg" target="_blank"><img src="z14.jpg" alt="" class="pics"></a>
+        <a href="z15.jpg" target="_blank"><img src="z15.jpg" alt="" class="pics"></a>
+        <a href="z16.jpg" target="_blank"><img src="z16.jpg" alt="" class="pics"></a>
+        <a href="z17.jpg" target="_blank"><img src="z17.jpg" alt="" class="pics"></a>
+        <a href="z18.jpg" target="_blank"><img src="z18.jpg" alt="" class="pics"></a>
+        <a href="z19.jpg" target="_blank"><img src="z19.jpg" alt="" class="pics"></a>
+        <a href="z20.jpg" target="_blank"><img src="z20.jpg" alt="" class="pics"></a>
+        <a href="z21.jpg" target="_blank"><img src="z21.jpg" alt="" class="pics"></a>
+        <a href="z22.jpg" target="_blank"><img src="z22.jpg" alt="" class="pics"></a>
+        <a href="z23.jpg" target="_blank"><img src="z23.jpg" alt="" class="pics"></a>
+        <a href="z24.jpg" target="_blank"><img src="z24.jpg" alt="" class="pics"></a>
+        <a href="z25.jpg" target="_blank"><img src="z25.jpg" alt="" class="pics"></a>
+        <a href="z26.jpg" target="_blank"><img src="z26.jpg" alt="" class="pics"></a>
+        <a href="z27.jpg" target="_blank"><img src="z27.jpg" alt="" class="pics"></a>
+        <a href="z28.jpg" target="_blank"><img src="z28.jpg" alt="" class="pics"></a>
+        <a href="z29.jpg" target="_blank"><img src="z29.jpg" alt="" class="pics"></a>
+        <a href="z30.jpg" target="_blank"><img src="z30.jpg" alt="" class="pics"></a>
+        <a href="z31.jpg" target="_blank"><img src="z31.jpg" alt="" class="pics"></a>
+        <a href="z32.jpg" target="_blank"><img src="z32.jpg" alt="" class="pics"></a>
+        <a href="z33.jpg" target="_blank"><img src="z33.jpg" alt="" class="pics"></a>
+        <a href="z34.jpg" target="_blank"><img src="z34.jpg" alt="" class="pics"></a>
+        <a href="z35.jpg" target="_blank"><img src="z35.jpg" alt="" class="pics"></a>
+        <a href="z36.jpg" target="_blank"><img src="z36.jpg" alt="" class="pics"></a>
+        <a href="z37.jpg" target="_blank"><img src="z37.jpg" alt="" class="pics"></a>
+        <a href="z38.jpg" target="_blank"><img src="z38.jpg" alt="" class="pics"></a>
+
+        <!-- <img src="z22.jpg" alt="" class="pics"id="22">
+        <img src="z23.jpg" alt="ololol??" class="pics"id="23"> -->
+    </div>
 </body>
+<style>
+    .video {
+        display: none;
+        max-width: fit-content;
+    }
+
+    .nope {
+        border: 2px solid blue;
+        max-width: 500px;
+        max-height: 500px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+        float: right;
+        position: relative;
+    }
+</style>
+<script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener("click", () => {
+        const videos = document.querySelectorAll(".video");
+        console.log(videos);
+        console.log("ok");
+
+        videos.forEach(video => {
+            if (video.style.display === "none" || video.style.display === "") {
+                video.style.display = "block";
+            } else {
+                video.style.display = "none";
+            }
+        });
+    });
+</script>
+
 </html>
